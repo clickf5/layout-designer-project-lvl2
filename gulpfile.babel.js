@@ -26,4 +26,6 @@ const srartWatch = () => {
   gulp.watch('./src/*.html').on('change', browserSync.reload);
 };
 
+export { buildStyles };
+
 export default gulp.parallel(buildStyles, runDevServer, srartWatch);
