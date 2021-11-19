@@ -15,13 +15,13 @@ const runDevServer = () => {
 };
 
 // styles
-const buildStyles = () => gulp.src('./src/scss/**/*.scss')
+const buildStyles = () => gulp.src('./src/scss/app.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('./css'));
 
 // watcher
 const srartWatch = () => {
-  gulp.watch('./src/scss/*.scss', buildStyles);
+  gulp.watch('./src/scss/app.scss', buildStyles);
   gulp.watch('./src/css/*.css').on('change', browserSync.reload);
   gulp.watch('./src/*.html').on('change', browserSync.reload);
 };
