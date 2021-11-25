@@ -58,6 +58,7 @@ body {
   line-height: 1.5;
   color: $darkgray;
   background-color: $black;
+  font-weight: map-get($font-weights, normal);
 }
 
 @mixin text-style($i) {
@@ -69,4 +70,12 @@ body {
   .text-#{$i} {
     @include text-style($i);
   }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: map-get($font-weights, bold);
 }
