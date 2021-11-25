@@ -56,6 +56,17 @@
 body {
   font-family: 'Roboto-Regular';
   line-height: 1.5;
-  color: $primary-text;
-  background-color: $primary-background;
+  color: $darkgray;
+  background-color: $black;
+}
+
+@mixin text-style($i) {
+  font-size: nth($font-sizes, $i);
+  line-height: nth($line-heights, $i);
+}
+
+@for $i from 1 to 8 {
+  .text-#{$i} {
+    @include text-style($i);
+  }
 }
