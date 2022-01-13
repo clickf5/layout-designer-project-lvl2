@@ -17,7 +17,7 @@ const runDevServer = () => {
 // styles
 const buildStyles = () => gulp.src('./src/scss/app.scss')
   .pipe(sass().on('error', sass.logError))
-  .pipe(gulp.dest('./css'));
+  .pipe(gulp.dest('./src/css'));
 
 // watcher
 const srartWatch = () => {
