@@ -1,0 +1,140 @@
+@import "variables";
+
+#page-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  color: $light;
+  text-align: center;
+}
+
+.bg-main {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  position: absolute;
+  top: 25px;
+  display: flex;
+  width: inherit;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: -20px;
+  column-gap: 90px;
+  font-size: 11px;
+
+  @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
+}
+
+.logo .title {
+  color: $light;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  text-transform: uppercase;
+
+  @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: normal;
+  }
+}
+
+nav ul li a {
+  color: $base-font-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $light;
+  }
+}
+
+nav ul li.current a {
+  color: $light;
+}
+
+.search {
+  margin-left: auto;
+
+  @media (max-width: 414px) {
+    align-self: stretch;
+    margin: 0;
+  }
+}
+
+.search form {
+  width: 100%;
+}
+
+.search input[type="text"] {
+  width: 246px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: $input-search;
+  color: $input-placeholder;
+  text-transform: uppercase;
+
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+}
+
+.registration {
+  display: flex;
+  max-width: 570px;
+  flex-wrap: wrap;
+  margin: 17px auto 0;
+  column-gap: 24px;
+}
+
+.registration input {
+  min-width: 270px;
+  min-height: 50px;
+  flex-grow: 1;
+  padding-left: 20px;
+  border: 2px solid $base-font-color;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  background: none;
+  color: $light;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  flex-grow: 1;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: $submit-button-background;
+  color: $light;
+  text-transform: uppercase;
+}

@@ -3,7 +3,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 
 const buildStyles = () => {
-    return src('./src/scss/index.scss')
+    return src('./src/scss/app.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(dest('./src/css/'))
         .pipe(browserSync.stream());
