@@ -4,28 +4,24 @@
   font-weight: 400;
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
-
 @font-face {
   font-family: Roboto;
   font-style: italic;
   font-weight: 400;
   src: url("../fonts/Roboto-Italic.ttf") format("truetype");
 }
-
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
 }
-
 @font-face {
   font-family: Roboto;
   font-style: italic;
   font-weight: 700;
   src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
 }
-
 html {
   box-sizing: border-box;
 }
@@ -46,7 +42,6 @@ h1 {
   font-size: 60px;
   line-height: 90px;
 }
-
 @media (max-width: 414px) {
   h1 {
     font-size: 30px;
@@ -58,7 +53,6 @@ h2 {
   font-size: 38px;
   line-height: 57px;
 }
-
 @media (max-width: 414px) {
   h2 {
     font-size: 18px;
@@ -79,7 +73,6 @@ body {
   width: 100%;
   padding: 0 20px;
 }
-
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -114,7 +107,6 @@ nav {
   column-gap: 90px;
   font-size: 11px;
 }
-
 @media (max-width: 414px) {
   nav {
     flex-direction: column;
@@ -122,7 +114,6 @@ nav {
     gap: 17px;
   }
 }
-
 @media (min-width: 1200px) {
   nav {
     padding: 0;
@@ -152,7 +143,6 @@ nav ul {
   list-style: none;
   text-transform: uppercase;
 }
-
 @media (max-width: 414px) {
   nav ul {
     flex-direction: column;
@@ -165,7 +155,6 @@ nav ul li a {
   color: #cacaca;
   text-decoration: none;
 }
-
 nav ul li a:hover {
   color: #fff;
 }
@@ -177,7 +166,6 @@ nav ul li.current a {
 .search {
   margin-left: auto;
 }
-
 @media (max-width: 414px) {
   .search {
     align-self: stretch;
@@ -189,7 +177,7 @@ nav ul li.current a {
   width: 100%;
 }
 
-.search input[type="text"] {
+.search input[type=text] {
   width: 246px;
   padding: 5px 10px;
   border: none;
@@ -198,9 +186,8 @@ nav ul li.current a {
   color: #757575;
   text-transform: uppercase;
 }
-
 @media (max-width: 414px) {
-  .search input[type="text"] {
+  .search input[type=text] {
     width: 100%;
   }
 }
@@ -226,7 +213,7 @@ nav ul li.current a {
   font-weight: bold;
 }
 
-button[type="submit"] {
+button[type=submit] {
   flex-grow: 1;
   padding: 20px 30px;
   border: none;
